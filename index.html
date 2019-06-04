@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Events</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap-grid.css">
+      <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+      <link rel="stylesheet" href="css/bootstrap-reboot.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-grid.min.css.map">
+      <link rel="stylesheet" href="css/bootstrap-reboot.css.map">
+      <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
+      <link rel="stylesheet" href="css/bootstrap.css.map">
+      <link rel="stylesheet" href="css/bootstrap.min.css.map">
+      <link rel="stylesheet" href="css/style.css">
+
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+     
+	 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUQqnwmyXZ2DgtqHIYSocbIiyG9e4s5ZA&libraries=geometry,places&callback=initMap" defer></script>
+<style> 
+.input-daterange input {
+    text-align: left;
+}
+</style> 
+ </head>
+   <body>
+<nav class="navbar navbar-expand-lg navbar-light menu">
+                <div class="container">  
+  <a class="navbar-brand" href="#">tonplandematch.com</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Itinéraires</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">À propos</a>
+      </li>
+    </ul>
+  </div>
+                             </div>
+</nav>
+
+<section class="front">       
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="col-4">
+                                          <div class="form-group checkbox-group">
+                                              <label for="usr">Choisis un ou des sports</label>
+                                                <ul style="margin: 10px 0 -20px 0!important; list-style-type: none; padding-left: 0;">
+                                                  <li class="sports"><input type="checkbox" id="hockey" name='taxonomies[NHL]' />
+                                                    <label for="hockey"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="baseball" name='taxonomies[MLB]' />
+                                                    <label for="baseball"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="football" name='taxonomies[football]' />
+                                                    <label for="football"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="basketball" name='taxonomies[NBA]' />
+                                                    <label for="basketball"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="soccer" name='taxonomies[MLS]' />
+                                                    <label for="soccer"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="fighting" name='taxonomies[fighting]' />
+                                                    <label for="fighting"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="tennis" name='taxonomies[tennis]' />
+                                                    <label for="tennis"></label>
+                                                  </li>
+                                                <li class="sports"><input type="checkbox" id="pga" name='taxonomies[pga]' />
+                                                    <label for="pga"></label>
+                                                  </li>
+                                                </ul>
+                                          </div>
+                </div>
+            </div>
+                                <div class="row recherche">
+                                        <div class="col-12">
+                                          <div class="form-group checkbox-group">
+                                              <label for="usr">Choisis un ou des sports</label>
+                                                <ul style="margin: 10px 0 -20px 0!important; list-style-type: none; padding-left: 0;">
+                                                  <li class="sports"><input type="checkbox" id="hockey" name='taxonomies[NHL]' />
+                                                    <label for="hockey"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="baseball" name='taxonomies[MLB]' />
+                                                    <label for="baseball"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="football" name='taxonomies[football]' />
+                                                    <label for="football"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="basketball" name='taxonomies[NBA]' />
+                                                    <label for="basketball"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="soccer" name='taxonomies[MLS]' />
+                                                    <label for="soccer"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="fighting" name='taxonomies[fighting]' />
+                                                    <label for="fighting"></label>
+                                                  </li>
+                                                  <li class="sports"><input type="checkbox" id="tennis" name='taxonomies[tennis]' />
+                                                    <label for="tennis"></label>
+                                                  </li>
+                                                <li class="sports"><input type="checkbox" id="pga" name='taxonomies[pga]' />
+                                                    <label for="pga"></label>
+                                                  </li>
+                                                </ul>
+                                          </div>
+                                       </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="form-group">
+                                               <label for="usr">Point de départ OU destination <span data-toggle="modal" data-target="#exampleModalCenter">?</span></label>
+                                               <input type="text" class="form-control" name="start_address" id="start_address">
+                                            </div>
+                                        </div>
+                                            <input type="hidden" name="lat">
+                                            <input type="hidden" name="long">
+                                        <div class="col-12 col-md-2">
+                                            <div class="form-group">
+                                               <label for="usr">Rayon (en km)</label>
+                                               <input type="text" class="form-control" name="range" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 input-daterange">
+                                            <div class="form-group">
+                                                <label for="usr">Date de départ</label>
+                                                <input type="text" class="form-control date" name="start_date" placeholder="aaaa-mm-jj" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 input-daterange">
+                                            <div class="form-group">
+                                                <label for="usr">Date de retour</label>
+                                                <input type="text" class="form-control" name="end_date" placeholder="aaaa-mm-jj" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="form-group">
+                                                <label for="usr">xxx</label>
+                                                <input type="submit" class="form-control btn btn-info">
+                                            </div>
+                                        </div>
+                                </div>
+                        </form>
+            </div>
+            <div id="map-canvas" hidden=""></div>
+        </div>
+    </div>
+</section>
+       
+<section class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Des suggestions d'itinéraires, des conseils de roadtripeux aguerris, des deals à ne pas manquer; Inscris-toi à l'infolettre! (Pas de spam, c'est promis.)</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <input type="text" class="form-control date" name="start_date" placeholder="Inscris-toi à l'infolettre" required="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                                        <h1>C'est quoi ton plan de match?</h1>
+                                        <p style="color: #ccc;">Bâti le plan de match de ton prochain road trip en quelques clics avec l'outil qui te permet de regrouper, selon tes critères de sport, de lieu et de date, tous les événements sportifs majeurs en Amérique du Nord. </p>
+                                        <p>1. Définis tes critères en remplissant le formulaire.
+                                        <br>2. Choisis les événements qui t'intéressent parmi ceux qui répondent à tes critères.
+                                        <br>3. achète tes billets et réserve ton hôtel en quelques clics et tu es prêt à partir!</p>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+       
+<section class="itineraires">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="titre">Suggestions d'itinéraires</p>
+                </div>
+                <div class="col-sm-4 card" style="background-color: darkgreen">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                  <div class="col-sm-4 card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4 card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-4 card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+
+                  </div>
+            </div>
+        </div>   
+</section>
+<footer>
+</footer>       
+       
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.js.map"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  <script src="js/bootstrap.js.map"></script>
+  <script src="js/bootstrap.min.js.map"></script>
+  <script src="js/picker.js"></script>
+   </body>  
+</html>
